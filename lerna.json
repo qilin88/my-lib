@@ -1,0 +1,19 @@
+{
+    "packages": ["packages/*", "apps/*"],
+    "version": "independent",
+    "npmClient": "pnpm",
+    "useWorkspaces": true,
+    "command": {
+      "publish": {
+        "conventionalCommits": true,
+        "registry": "https://registry.npmjs.org/",
+        "access": "public",
+        "ignoreChanges": ["*.md", "test/**"]
+      }
+    },
+    "ignoreChanges": [
+      "**/*.md",
+      "**/node_modules/**",
+      "**/__tests__/**"
+    ]
+   }
