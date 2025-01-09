@@ -1,21 +1,19 @@
 {
   "name": "my-libs",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "scripts": {
-    "prepublish": "node scripts/replace-workspace.js",
-    "publish": "lerna publish"
-  },
+  "private": true,
   "workspaces": [
-    "packages/*",
-    "apps/*"
+    "packages/*"
   ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "@changesets/cli": "^2.27.11",
     "lerna": "^8.1.9"
   }
 }
