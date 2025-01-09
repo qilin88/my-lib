@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "preversion": "pnpm publish --dry-run",
-    "version": "lerna version"
+    "prepublish": "node scripts/replace-workspace.js",
+    "publish": "lerna publish"
   },
   "workspaces": [
     "packages/*",
