@@ -1,6 +1,6 @@
 {
   "name": "@ql/components",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,9 +18,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "lerna": "^4.0.0"
-  },
   "dependencies": {
     "@ql/libs": "workspace:^"
   }
