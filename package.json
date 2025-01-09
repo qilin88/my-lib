@@ -12,10 +12,10 @@
     "publish": "lerna publish",
     "test": "lerna run test"
   },
+  "devDependencies": {
+    "lerna": "^6.6.2"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "lerna": "^4.0.0"
-  }
+  "license": "ISC"
 }
