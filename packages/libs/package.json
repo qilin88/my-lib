@@ -17,8 +17,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@ql/components": "workspace:^"
-  }
+  "license": "ISC"
 }

@@ -20,5 +20,8 @@
   "license": "ISC",
   "devDependencies": {
     "lerna": "^4.0.0"
+  },
+  "dependencies": {
+    "@ql/libs": "workspace:^"
   }
 }
