@@ -1,13 +1,55 @@
-0 silly argv { _: [ 'version' ], lernaVersion: '4.0.0', '$0': 'lerna' }
-1 notice cli v4.0.0
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   lernaVersion: '6.6.2',
+0 silly argv   '$0': 'node_modules/lerna/dist/cli.js'
+0 silly argv }
+1 notice cli v6.6.2
 2 verbose rootPath /Users/chen/Desktop/30/practice/my-libs
 3 info versioning independent
-4 error Error: Unsupported URL Type "workspace:": workspace:^
-4 error     at unsupportedURLType (/usr/local/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:246:15)
-4 error     at fromURL (/usr/local/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:306:13)
-4 error     at Function.resolve (/usr/local/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:76:12)
-4 error     at /usr/local/lib/node_modules/lerna/node_modules/@lerna/package-graph/index.js:66:30
-4 error     at Array.forEach (<anonymous>)
-4 error     at /usr/local/lib/node_modules/lerna/node_modules/@lerna/package-graph/index.js:60:38
-4 error     at PackageGraph.forEach (<anonymous>)
-4 error     at new PackageGraph (/usr/local/lib/node_modules/lerna/node_modules/@lerna/package-graph/index.js:49:10)
+4 verbose packageConfigs Package manager 'pnpm' detected. Resolving packages using 'pnpm-workspace.yaml'.
+5 silly isAnythingCommitted
+6 verbose isAnythingCommitted 1
+7 silly getCurrentBranch
+8 verbose currentBranch main
+9 silly remoteBranchExists
+10 silly isBehindUpstream
+11 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 0
+12 silly hasTags
+13 verbose hasTags true
+14 silly git-describe.sync "@ql/components@1.0.1-1-gb8c2276" => {"lastTagName":"@ql/components@1.0.1","lastVersion":"1.0.1","refCount":"1","sha":"b8c2276","isDirty":false}
+15 info Looking for changed packages since @ql/components@1.0.1
+16 info ignoring diff in paths matching [ '*.md' ]
+17 silly checking diff packages/components
+18 silly found diff in packages/components/index.js
+18 silly found diff in packages/components/package.json
+19 verbose filtered diff [ 'packages/components/index.js', 'packages/components/package.json' ]
+20 silly checking diff packages/libs
+21 silly no diff found in @ql/libs
+22 verbose updated @ql/components
+23 verbose git-describe undefined => "@ql/components@1.0.1-1-gb8c2276"
+24 silly git-describe parsed => {"lastTagName":"@ql/components@1.0.1","lastVersion":"1.0.1","refCount":"1","sha":"b8c2276","isDirty":false}
+25 info execute Skipping releases
+26 silly lifecycle No script for "preversion" in "my-libs", continuing
+27 silly lifecycle No script for "preversion" in "@ql/components", continuing
+28 verbose version @ql/components has no lockfile. Skipping lockfile update.
+29 silly lifecycle No script for "version" in "@ql/components", continuing
+30 verbose version Updating root pnpm-lock.yaml
+31 silly lifecycle No script for "version" in "my-libs", continuing
+32 silly gitAdd [ 'packages/components/package.json', 'pnpm-lock.yaml' ]
+33 silly gitCommit chore(release): publish
+33 silly gitCommit
+33 silly gitCommit  - @ql/components@1.0.1
+34 verbose git [
+34 verbose git   'commit',
+34 verbose git   '-F',
+34 verbose git   '/private/var/folders/5c/nw2z7gm93xv0j7nhsztsdp0h0000gn/T/bebe524b-4884-4081-97e7-1d3e04544f23/lerna-commit.txt'
+34 verbose git ]
+35 silly gitTag @ql/components@1.0.1 git tag %s -m %s
+36 verbose git [ 'tag', '@ql/components@1.0.1', '-m', '@ql/components@1.0.1' ]
+37 error Error: Command failed with exit code 128: git tag @ql/components@1.0.1 -m @ql/components@1.0.1
+37 error fatal: tag '@ql/components@1.0.1' already exists
+37 error     at makeError (/Users/chen/Desktop/30/practice/my-libs/node_modules/.pnpm/execa@5.0.0/node_modules/execa/lib/error.js:59:11)
+37 error     at handlePromise (/Users/chen/Desktop/30/practice/my-libs/node_modules/.pnpm/execa@5.0.0/node_modules/execa/index.js:114:26)
+37 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+37 error     at async Promise.all (index 0)
+37 error     at async Promise.all (index 0)
