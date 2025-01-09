@@ -9,6 +9,12 @@
         "registry": "http://localhost:4873",
         "access": "public",
         "ignoreChanges": ["*.md", "test/**"]
+      },
+      "version": {
+        "conventionalCommits": true,
+        "message": "chore(release): version packages",
+        "changelogPreset": "conventional-changelog-angular",
+        "syncWorkspaceLock": true
       }
     },
     "ignoreChanges": [
