@@ -8,7 +8,9 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "lerna run build",
+    "publish": "lerna publish",
+    "test": "lerna run test"
   },
   "keywords": [],
   "author": "",

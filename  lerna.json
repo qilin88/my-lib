@@ -1,0 +1,17 @@
+{
+    "version": "independent",
+    "npmClient": "pnpm",
+    "useWorkspaces": true,
+    "packages": ["packages/*"],
+    "command": {
+      "publish": {
+        "registry": "http://localhost:4873/",
+        "ignoreChanges": ["*.md"],
+        "message": "chore(release): publish"
+      },
+      "bootstrap": {
+        "ignore": "component-*",
+        "npmClientArgs": ["--no-package-lock"]
+      }
+    }
+  }
