@@ -41,7 +41,7 @@ const Button: React.FC<ButtonProps> = ({
         large: 'px-6 py-3 text-lg',
     };
 
-    const disabledStyles = disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer';
+    const disabledStyles = disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer cursor';
 
     return (
         <button
