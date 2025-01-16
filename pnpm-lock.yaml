@@ -15,8 +15,8 @@ importers:
   apps/docs:
     dependencies:
       '@ql/components':
-        specifier: workspace:^
-        version: link:../../packages/components
+        specifier: ^1.0.1
+        version: 1.0.2
     devDependencies:
       '@chromatic-com/storybook':
         specifier: ^3.2.3
@@ -686,6 +686,12 @@ packages:
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
+
+  '@ql/components@1.0.2':
+    resolution: {integrity: sha512-8Z2QM2hrO2CiL2fiQFhMccn+C2xgNy6IaJbGjvTvSYUrDWCGvYF6dYH6iRqpZgqstxnWQPmiTYX97H2CP/0KwQ==}
+
+  '@ql/libs@1.0.2':
+    resolution: {integrity: sha512-/MNST/qduLle/SuwL20gyImuhyvbANfCb9buUuV9NDpudxJEGD8aCYpyKvcA21IaYJfwNt2+efkuFyExRizYrw==}
 
   '@rollup/plugin-commonjs@28.0.2':
     resolution: {integrity: sha512-BEFI2EDqzl+vA1rl97IDRZ61AIwGH093d9nz8+dThxJNH8oSoB7MjWvPCX3dkaK1/RCJ/1v/R1XB15FuSs0fQw==}
@@ -5142,6 +5148,12 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
+
+  '@ql/components@1.0.2':
+    dependencies:
+      '@ql/libs': 1.0.2
+
+  '@ql/libs@1.0.2': {}
 
   '@rollup/plugin-commonjs@28.0.2(rollup@4.30.1)':
     dependencies:
