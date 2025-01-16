@@ -16,7 +16,7 @@
 11 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 0
 12 silly hasTags
 13 verbose hasTags true
-14 silly git-describe.sync "@ql/docs@1.0.2-3-ga896eaf" => {"lastTagName":"@ql/docs@1.0.2","lastVersion":"1.0.2","refCount":"3","sha":"a896eaf","isDirty":false}
+14 silly git-describe.sync "@ql/docs@1.0.2-4-g77d7c3f" => {"lastTagName":"@ql/docs@1.0.2","lastVersion":"1.0.2","refCount":"4","sha":"77d7c3f","isDirty":false}
 15 info Looking for changed packages since @ql/docs@1.0.2
 16 info ignoring diff in paths matching [ '*.md' ]
 17 silly checking diff apps/docs
@@ -41,14 +41,14 @@
 26 silly no diff found in @ql/libs
 27 verbose updated @ql/docs
 28 verbose updated @ql/components
-29 verbose git-describe undefined => "@ql/docs@1.0.2-3-ga896eaf"
-30 silly git-describe parsed => {"lastTagName":"@ql/docs@1.0.2","lastVersion":"1.0.2","refCount":"3","sha":"a896eaf","isDirty":false}
+29 verbose git-describe undefined => "@ql/docs@1.0.2-4-g77d7c3f"
+30 silly git-describe parsed => {"lastTagName":"@ql/docs@1.0.2","lastVersion":"1.0.2","refCount":"4","sha":"77d7c3f","isDirty":false}
 31 info execute Skipping releases
 32 silly lifecycle No script for "preversion" in "my-libs", continuing
 33 silly lifecycle No script for "preversion" in "@ql/docs", continuing
 34 silly lifecycle No script for "preversion" in "@ql/components", continuing
-35 verbose version @ql/docs has no lockfile. Skipping lockfile update.
-36 verbose version @ql/components has no lockfile. Skipping lockfile update.
+35 verbose version @ql/components has no lockfile. Skipping lockfile update.
+36 verbose version @ql/docs has no lockfile. Skipping lockfile update.
 37 silly lifecycle No script for "version" in "@ql/components", continuing
 38 silly lifecycle No script for "version" in "@ql/docs", continuing
 39 verbose version Updating root pnpm-lock.yaml
@@ -65,6 +65,7 @@
 40 error The latest release of @ql/components is "1.0.2".
 40 error
 40 error If you need the full list of all 3 published versions run "$ pnpm view @ql/components versions".
+40 error Progress: resolved 28, reused 0, downloaded 0, added 0
 40 error     at makeError (/Users/chen/Desktop/30/practice/my-libs/node_modules/.pnpm/execa@5.0.0/node_modules/execa/lib/error.js:59:11)
 40 error     at handlePromise (/Users/chen/Desktop/30/practice/my-libs/node_modules/.pnpm/execa@5.0.0/node_modules/execa/index.js:114:26)
 40 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
