@@ -1,13 +1,79 @@
-0 silly argv { _: [ 'version' ], lernaVersion: '4.0.0', '$0': 'lerna' }
-1 notice cli v4.0.0
-2 verbose rootPath /Users/chen/Desktop/30/practice/my-libs
-3 info versioning independent
-4 error Error: Unsupported URL Type "workspace:": workspace:^
-4 error     at unsupportedURLType (/usr/local/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:246:15)
-4 error     at fromURL (/usr/local/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:306:13)
-4 error     at Function.resolve (/usr/local/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:76:12)
-4 error     at /usr/local/lib/node_modules/lerna/node_modules/@lerna/package-graph/index.js:66:30
-4 error     at Array.forEach (<anonymous>)
-4 error     at /usr/local/lib/node_modules/lerna/node_modules/@lerna/package-graph/index.js:60:38
-4 error     at PackageGraph.forEach (<anonymous>)
-4 error     at new PackageGraph (/usr/local/lib/node_modules/lerna/node_modules/@lerna/package-graph/index.js:49:10)
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   lernaVersion: '8.1.9',
+0 silly argv   '$0': 'node_modules/lerna/dist/cli.js'
+0 silly argv }
+1 notice cli v8.1.9
+2 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*","apps/*"]
+3 verbose rootPath /Users/chen/Desktop/30/practice/my-libs
+4 info versioning independent
+5 silly isAnythingCommitted
+6 verbose isAnythingCommitted 1
+7 silly getCurrentBranch
+8 verbose currentBranch main
+9 silly remoteBranchExists
+10 silly isBehindUpstream
+11 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 0
+12 silly hasTags
+13 verbose hasTags true
+14 silly git-describe.sync "@ql/components@1.0.7-1-g4088775" => {"lastTagName":"@ql/components@1.0.7","lastVersion":"1.0.7","refCount":"1","sha":"4088775","isDirty":false}
+15 info Looking for changed packages since @ql/components@1.0.7
+16 info ignoring diff in paths matching [ '*.md' ]
+17 silly checking diff apps/docs
+18 silly no diff found in @ql/docs
+19 silly checking diff packages/cli
+20 silly no diff found in @ql/json2ts
+21 silly checking diff packages/components
+22 silly no diff found in @ql/components
+23 silly checking diff packages/libs
+24 silly found diff in packages/libs/package.json
+25 verbose filtered diff [ 'packages/libs/package.json' ]
+26 verbose updated @ql/docs
+27 verbose updated @ql/components
+28 verbose updated @ql/libs
+29 verbose git-describe undefined => "@ql/components@1.0.7-1-g4088775"
+30 silly git-describe parsed => {"lastTagName":"@ql/components@1.0.7","lastVersion":"1.0.7","refCount":"1","sha":"4088775","isDirty":false}
+31 info execute Skipping releases
+32 silly lifecycle No script for "preversion" in "my-libs", continuing
+33 silly lifecycle No script for "preversion" in "@ql/libs", continuing
+34 verbose version @ql/libs has no lockfile. Skipping lockfile update.
+35 silly lifecycle No script for "version" in "@ql/libs", continuing
+36 silly lifecycle No script for "preversion" in "@ql/components", continuing
+37 verbose version @ql/components has no lockfile. Skipping lockfile update.
+38 silly lifecycle No script for "version" in "@ql/components", continuing
+39 silly lifecycle No script for "preversion" in "@ql/docs", continuing
+40 verbose version @ql/docs has no lockfile. Skipping lockfile update.
+41 silly lifecycle No script for "version" in "@ql/docs", continuing
+42 silly lifecycle No script for "version" in "my-libs", continuing
+43 verbose version Updating root pnpm-lock.yaml
+44 silly gitAdd [
+44 silly gitAdd   'packages/libs/package.json',
+44 silly gitAdd   'packages/components/package.json',
+44 silly gitAdd   'apps/docs/package.json',
+44 silly gitAdd   'pnpm-lock.yaml'
+44 silly gitAdd ]
+45 silly gitCommit chore(release): publish
+45 silly gitCommit
+45 silly gitCommit  - @ql/docs@1.0.8
+45 silly gitCommit  - @ql/components@1.0.8
+45 silly gitCommit  - @ql/libs@1.0.3
+46 verbose git [
+46 verbose git   'commit',
+46 verbose git   '-F',
+46 verbose git   '/private/var/folders/5c/nw2z7gm93xv0j7nhsztsdp0h0000gn/T/c655af2e-f718-4ef4-8fbb-630dc690d988/lerna-commit.txt'
+46 verbose git ]
+47 silly gitTag @ql/docs@1.0.8 git tag %s -m %s
+48 verbose git [ 'tag', '@ql/docs@1.0.8', '-m', '@ql/docs@1.0.8' ]
+49 silly gitTag @ql/components@1.0.8 git tag %s -m %s
+50 verbose git [ 'tag', '@ql/components@1.0.8', '-m', '@ql/components@1.0.8' ]
+51 silly gitTag @ql/libs@1.0.3 git tag %s -m %s
+52 verbose git [ 'tag', '@ql/libs@1.0.3', '-m', '@ql/libs@1.0.3' ]
+53 error Error: Command failed with exit code 128: git tag @ql/libs@1.0.3 -m @ql/libs@1.0.3
+53 error fatal: tag '@ql/libs@1.0.3' already exists
+53 error     at makeError (/Users/chen/Desktop/30/practice/my-libs/node_modules/.pnpm/execa@5.0.0/node_modules/execa/lib/error.js:59:11)
+53 error     at handlePromise (/Users/chen/Desktop/30/practice/my-libs/node_modules/.pnpm/execa@5.0.0/node_modules/execa/index.js:114:26)
+53 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+53 error     at async Promise.all (index 2)
+53 error     at async VersionCommand.gitCommitAndTagVersionForUpdates (/Users/chen/Desktop/30/practice/my-libs/node_modules/.pnpm/lerna@8.1.9_encoding@0.1.13/node_modules/lerna/dist/index.js:9957:11)
+53 error     at async VersionCommand.commitAndTagUpdates (/Users/chen/Desktop/30/practice/my-libs/node_modules/.pnpm/lerna@8.1.9_encoding@0.1.13/node_modules/lerna/dist/index.js:9933:18)
+53 error     at async Promise.all (index 0)
