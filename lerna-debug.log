@@ -1,18 +1,212 @@
 0 silly argv {
-0 silly argv   _: [ 'publish' ],
-0 silly argv   composed: 'publish',
-0 silly argv   lernaVersion: '4.0.0',
-0 silly argv   '$0': 'lerna'
+0 silly argv   _: [ 'version' ],
+0 silly argv   lernaVersion: '6.6.2',
+0 silly argv   '$0': 'node_modules/lerna/dist/cli.js'
 0 silly argv }
-1 notice cli v4.0.0
+1 notice cli v6.6.2
 2 verbose rootPath /Users/chen/Desktop/30/practice/my-libs
 3 info versioning independent
-4 error Error: Unsupported URL Type "workspace:": workspace:^
-4 error     at unsupportedURLType (/usr/local/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:246:15)
-4 error     at fromURL (/usr/local/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:306:13)
-4 error     at Function.resolve (/usr/local/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:76:12)
-4 error     at /usr/local/lib/node_modules/lerna/node_modules/@lerna/package-graph/index.js:66:30
-4 error     at Array.forEach (<anonymous>)
-4 error     at /usr/local/lib/node_modules/lerna/node_modules/@lerna/package-graph/index.js:60:38
-4 error     at PackageGraph.forEach (<anonymous>)
-4 error     at new PackageGraph (/usr/local/lib/node_modules/lerna/node_modules/@lerna/package-graph/index.js:49:10)
+4 verbose packageConfigs Package manager 'pnpm' detected. Resolving packages using 'pnpm-workspace.yaml'.
+5 silly isAnythingCommitted
+6 verbose isAnythingCommitted 1
+7 silly getCurrentBranch
+8 verbose currentBranch main
+9 silly remoteBranchExists
+10 silly isBehindUpstream
+11 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 0
+12 silly hasTags
+13 verbose hasTags true
+14 silly git-describe.sync "@ql/components@1.0.2-2-g0213556" => {"lastTagName":"@ql/components@1.0.2","lastVersion":"1.0.2","refCount":"2","sha":"0213556","isDirty":false}
+15 info Looking for changed packages since @ql/components@1.0.2
+16 info ignoring diff in paths matching [ '*.md' ]
+17 silly checking diff apps/docs
+18 silly found diff in apps/docs/.storybook/main.js
+18 silly found diff in apps/docs/.storybook/preview.js
+18 silly found diff in apps/docs/index.js
+18 silly found diff in apps/docs/package.json
+18 silly found diff in apps/docs/stories/Button.stories.tsx
+18 silly found diff in apps/docs/stories/Configure.mdx
+18 silly found diff in apps/docs/stories/assets/accessibility.png
+18 silly found diff in apps/docs/stories/assets/accessibility.svg
+18 silly found diff in apps/docs/stories/assets/addon-library.png
+18 silly found diff in apps/docs/stories/assets/assets.png
+18 silly found diff in apps/docs/stories/assets/avif-test-image.avif
+18 silly found diff in apps/docs/stories/assets/context.png
+18 silly found diff in apps/docs/stories/assets/discord.svg
+18 silly found diff in apps/docs/stories/assets/docs.png
+18 silly found diff in apps/docs/stories/assets/figma-plugin.png
+18 silly found diff in apps/docs/stories/assets/github.svg
+18 silly found diff in apps/docs/stories/assets/share.png
+18 silly found diff in apps/docs/stories/assets/styling.png
+18 silly found diff in apps/docs/stories/assets/testing.png
+18 silly found diff in apps/docs/stories/assets/theming.png
+18 silly found diff in apps/docs/stories/assets/tutorials.svg
+18 silly found diff in apps/docs/stories/assets/youtube.svg
+18 silly found diff in apps/docs/tsconfig.json
+18 silly found diff in apps/docs/vite.config.ts
+19 verbose filtered diff [
+19 verbose filtered diff   'apps/docs/.storybook/main.js',
+19 verbose filtered diff   'apps/docs/.storybook/preview.js',
+19 verbose filtered diff   'apps/docs/index.js',
+19 verbose filtered diff   'apps/docs/package.json',
+19 verbose filtered diff   'apps/docs/stories/Button.stories.tsx',
+19 verbose filtered diff   'apps/docs/stories/Configure.mdx',
+19 verbose filtered diff   'apps/docs/stories/assets/accessibility.png',
+19 verbose filtered diff   'apps/docs/stories/assets/accessibility.svg',
+19 verbose filtered diff   'apps/docs/stories/assets/addon-library.png',
+19 verbose filtered diff   'apps/docs/stories/assets/assets.png',
+19 verbose filtered diff   'apps/docs/stories/assets/avif-test-image.avif',
+19 verbose filtered diff   'apps/docs/stories/assets/context.png',
+19 verbose filtered diff   'apps/docs/stories/assets/discord.svg',
+19 verbose filtered diff   'apps/docs/stories/assets/docs.png',
+19 verbose filtered diff   'apps/docs/stories/assets/figma-plugin.png',
+19 verbose filtered diff   'apps/docs/stories/assets/github.svg',
+19 verbose filtered diff   'apps/docs/stories/assets/share.png',
+19 verbose filtered diff   'apps/docs/stories/assets/styling.png',
+19 verbose filtered diff   'apps/docs/stories/assets/testing.png',
+19 verbose filtered diff   'apps/docs/stories/assets/theming.png',
+19 verbose filtered diff   'apps/docs/stories/assets/tutorials.svg',
+19 verbose filtered diff   'apps/docs/stories/assets/youtube.svg',
+19 verbose filtered diff   'apps/docs/tsconfig.json',
+19 verbose filtered diff   'apps/docs/vite.config.ts'
+19 verbose filtered diff ]
+20 silly checking diff packages/cli
+21 silly found diff in packages/cli/dist/cli.d.ts
+21 silly found diff in packages/cli/dist/cli.js
+21 silly found diff in packages/cli/dist/json2ts.d.ts
+21 silly found diff in packages/cli/dist/json2ts.js
+21 silly found diff in packages/cli/dist/rollup.config.mjs
+21 silly found diff in packages/cli/dist/swagger.d.ts
+21 silly found diff in packages/cli/dist/swagger.js
+21 silly found diff in packages/cli/dist/type.d.ts
+21 silly found diff in packages/cli/dist/type.js
+21 silly found diff in packages/cli/example.json
+21 silly found diff in packages/cli/package.json
+21 silly found diff in packages/cli/src/json2ts.ts
+21 silly found diff in packages/cli/tsconfig.json
+21 silly found diff in packages/cli/types.ts
+22 verbose filtered diff [
+22 verbose filtered diff   'packages/cli/dist/cli.d.ts',
+22 verbose filtered diff   'packages/cli/dist/cli.js',
+22 verbose filtered diff   'packages/cli/dist/json2ts.d.ts',
+22 verbose filtered diff   'packages/cli/dist/json2ts.js',
+22 verbose filtered diff   'packages/cli/dist/rollup.config.mjs',
+22 verbose filtered diff   'packages/cli/dist/swagger.d.ts',
+22 verbose filtered diff   'packages/cli/dist/swagger.js',
+22 verbose filtered diff   'packages/cli/dist/type.d.ts',
+22 verbose filtered diff   'packages/cli/dist/type.js',
+22 verbose filtered diff   'packages/cli/example.json',
+22 verbose filtered diff   'packages/cli/package.json',
+22 verbose filtered diff   'packages/cli/src/json2ts.ts',
+22 verbose filtered diff   'packages/cli/tsconfig.json',
+22 verbose filtered diff   'packages/cli/types.ts'
+22 verbose filtered diff ]
+23 silly checking diff packages/components
+24 silly found diff in packages/components/dist/cjs/Button/index.js
+24 silly found diff in packages/components/dist/cjs/Button/index.js.map
+24 silly found diff in packages/components/dist/cjs/index.js
+24 silly found diff in packages/components/dist/cjs/index.js.map
+24 silly found diff in packages/components/dist/es/Button/index.d.ts
+24 silly found diff in packages/components/dist/es/Button/index.js
+24 silly found diff in packages/components/dist/es/Button/index.js.map
+24 silly found diff in packages/components/dist/es/index.d.ts
+24 silly found diff in packages/components/dist/es/index.js
+24 silly found diff in packages/components/dist/es/index.js.map
+24 silly found diff in packages/components/index.js
+24 silly found diff in packages/components/package.json
+24 silly found diff in packages/components/rollup.config.mjs
+24 silly found diff in packages/components/src/Button/index.tsx
+24 silly found diff in packages/components/src/index.ts
+24 silly found diff in packages/components/tsconfig.json
+25 verbose filtered diff [
+25 verbose filtered diff   'packages/components/dist/cjs/Button/index.js',
+25 verbose filtered diff   'packages/components/dist/cjs/Button/index.js.map',
+25 verbose filtered diff   'packages/components/dist/cjs/index.js',
+25 verbose filtered diff   'packages/components/dist/cjs/index.js.map',
+25 verbose filtered diff   'packages/components/dist/es/Button/index.d.ts',
+25 verbose filtered diff   'packages/components/dist/es/Button/index.js',
+25 verbose filtered diff   'packages/components/dist/es/Button/index.js.map',
+25 verbose filtered diff   'packages/components/dist/es/index.d.ts',
+25 verbose filtered diff   'packages/components/dist/es/index.js',
+25 verbose filtered diff   'packages/components/dist/es/index.js.map',
+25 verbose filtered diff   'packages/components/index.js',
+25 verbose filtered diff   'packages/components/package.json',
+25 verbose filtered diff   'packages/components/rollup.config.mjs',
+25 verbose filtered diff   'packages/components/src/Button/index.tsx',
+25 verbose filtered diff   'packages/components/src/index.ts',
+25 verbose filtered diff   'packages/components/tsconfig.json'
+25 verbose filtered diff ]
+26 silly checking diff packages/libs
+27 silly found diff in packages/libs/dist/index.d.ts
+27 silly found diff in packages/libs/dist/index.js
+27 silly found diff in packages/libs/dist/index.js.map
+27 silly found diff in packages/libs/index.js
+27 silly found diff in packages/libs/package.json
+27 silly found diff in packages/libs/rollup.config.mjs
+27 silly found diff in packages/libs/src/index.ts
+27 silly found diff in packages/libs/tsconfig.json
+28 verbose filtered diff [
+28 verbose filtered diff   'packages/libs/dist/index.d.ts',
+28 verbose filtered diff   'packages/libs/dist/index.js',
+28 verbose filtered diff   'packages/libs/dist/index.js.map',
+28 verbose filtered diff   'packages/libs/index.js',
+28 verbose filtered diff   'packages/libs/package.json',
+28 verbose filtered diff   'packages/libs/rollup.config.mjs',
+28 verbose filtered diff   'packages/libs/src/index.ts',
+28 verbose filtered diff   'packages/libs/tsconfig.json'
+28 verbose filtered diff ]
+29 verbose updated @ql/docs
+30 verbose updated @ql/json2ts
+31 verbose updated @ql/components
+32 verbose updated @ql/libs
+33 verbose git-describe undefined => "@ql/components@1.0.2-2-g0213556"
+34 silly git-describe parsed => {"lastTagName":"@ql/components@1.0.2","lastVersion":"1.0.2","refCount":"2","sha":"0213556","isDirty":false}
+35 info execute Skipping releases
+36 silly lifecycle No script for "preversion" in "my-libs", continuing
+37 silly lifecycle No script for "preversion" in "@ql/json2ts", continuing
+38 silly lifecycle No script for "preversion" in "@ql/libs", continuing
+39 verbose version @ql/json2ts has no lockfile. Skipping lockfile update.
+40 verbose version @ql/libs has no lockfile. Skipping lockfile update.
+41 silly lifecycle No script for "version" in "@ql/json2ts", continuing
+42 silly lifecycle No script for "version" in "@ql/libs", continuing
+43 silly lifecycle No script for "preversion" in "@ql/components", continuing
+44 verbose version @ql/components has no lockfile. Skipping lockfile update.
+45 silly lifecycle No script for "version" in "@ql/components", continuing
+46 silly lifecycle No script for "preversion" in "@ql/docs", continuing
+47 verbose version @ql/docs has no lockfile. Skipping lockfile update.
+48 silly lifecycle No script for "version" in "@ql/docs", continuing
+49 verbose version Updating root pnpm-lock.yaml
+50 silly lifecycle No script for "version" in "my-libs", continuing
+51 silly gitAdd [
+51 silly gitAdd   'packages/cli/package.json',
+51 silly gitAdd   'packages/libs/package.json',
+51 silly gitAdd   'packages/components/package.json',
+51 silly gitAdd   'apps/docs/package.json',
+51 silly gitAdd   'pnpm-lock.yaml'
+51 silly gitAdd ]
+52 silly gitCommit chore(release): publish
+52 silly gitCommit
+52 silly gitCommit  - @ql/docs@1.0.1
+52 silly gitCommit  - @ql/json2ts@1.0.1
+52 silly gitCommit  - @ql/components@1.0.1
+52 silly gitCommit  - @ql/libs@1.0.3
+53 verbose git [
+53 verbose git   'commit',
+53 verbose git   '-F',
+53 verbose git   '/private/var/folders/5c/nw2z7gm93xv0j7nhsztsdp0h0000gn/T/130ed20a-e223-44aa-b694-b44331b6526f/lerna-commit.txt'
+53 verbose git ]
+54 silly gitTag @ql/docs@1.0.1 git tag %s -m %s
+55 verbose git [ 'tag', '@ql/docs@1.0.1', '-m', '@ql/docs@1.0.1' ]
+56 silly gitTag @ql/json2ts@1.0.1 git tag %s -m %s
+57 verbose git [ 'tag', '@ql/json2ts@1.0.1', '-m', '@ql/json2ts@1.0.1' ]
+58 silly gitTag @ql/components@1.0.1 git tag %s -m %s
+59 verbose git [ 'tag', '@ql/components@1.0.1', '-m', '@ql/components@1.0.1' ]
+60 silly gitTag @ql/libs@1.0.3 git tag %s -m %s
+61 verbose git [ 'tag', '@ql/libs@1.0.3', '-m', '@ql/libs@1.0.3' ]
+62 error Error: Command failed with exit code 128: git tag @ql/components@1.0.1 -m @ql/components@1.0.1
+62 error fatal: tag '@ql/components@1.0.1' already exists
+62 error     at makeError (/Users/chen/Desktop/30/practice/my-libs/node_modules/.pnpm/execa@5.0.0/node_modules/execa/lib/error.js:59:11)
+62 error     at handlePromise (/Users/chen/Desktop/30/practice/my-libs/node_modules/.pnpm/execa@5.0.0/node_modules/execa/index.js:114:26)
+62 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+62 error     at async Promise.all (index 2)
+62 error     at async Promise.all (index 0)
