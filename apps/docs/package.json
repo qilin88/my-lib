@@ -26,6 +26,7 @@
     "vite": "^6.0.7"
   },
   "dependencies": {
-    "@ql/components": "workspace:^"
-  }
+    "@ql/components": "^1.0.0"
+  },
+  "gitHead": "44afecdc32de5369380cb9f1d0d0c23ce3868743"
 }
