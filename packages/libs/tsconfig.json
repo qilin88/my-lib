@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "esnext",
+      "lib": ["esnext"],
+      "declaration": true,
+      "sourceMap": true,
+      "outDir": "dist",        // 与 rollup config 中的 outDir 保持一致
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "strict": true
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
+  }

@@ -2,7 +2,7 @@
   "version": "independent",
   "npmClient": "pnpm",
   "useWorkspaces": true,
-  "packages": ["packages/*"],
+  "packages": ["packages/*", "apps/*"],
   "command": {
     "publish": {
       "registry": "http://localhost:4873/",
