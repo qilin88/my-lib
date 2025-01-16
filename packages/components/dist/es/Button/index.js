@@ -14,7 +14,7 @@ var Button = function (_a) {
         medium: 'px-4 py-2 text-base',
         large: 'px-6 py-3 text-lg',
     };
-    var disabledStyles = disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer';
+    var disabledStyles = disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer cursor';
     return (React.createElement("button", __assign({ type: type, onClick: onClick, disabled: disabled, className: "".concat(baseStyles, " ").concat(variants[variant], " ").concat(sizes[size], " ").concat(disabledStyles, " ").concat(className) }, rest), children));
 };
 
