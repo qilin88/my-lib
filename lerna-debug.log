@@ -16,22 +16,32 @@
 11 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 0
 12 silly hasTags
 13 verbose hasTags true
-14 silly git-describe.sync "@ql/docs@1.0.1-2-g6e51754" => {"lastTagName":"@ql/docs@1.0.1","lastVersion":"1.0.1","refCount":"2","sha":"6e51754","isDirty":false}
-15 info Looking for changed packages since @ql/docs@1.0.1
+14 silly git-describe.sync "@ql/docs@1.0.2-2-g3fbc5fa" => {"lastTagName":"@ql/docs@1.0.2","lastVersion":"1.0.2","refCount":"2","sha":"3fbc5fa","isDirty":false}
+15 info Looking for changed packages since @ql/docs@1.0.2
 16 info ignoring diff in paths matching [ '*.md' ]
 17 silly checking diff apps/docs
 18 silly no diff found in @ql/docs
 19 silly checking diff packages/cli
 20 silly no diff found in @ql/json2ts
 21 silly checking diff packages/components
-22 silly found diff in packages/components/src/Button/index.tsx
-23 verbose filtered diff [ 'packages/components/src/Button/index.tsx' ]
+22 silly found diff in packages/components/dist/cjs/Button/index.js
+22 silly found diff in packages/components/dist/cjs/Button/index.js.map
+22 silly found diff in packages/components/dist/es/Button/index.js
+22 silly found diff in packages/components/dist/es/Button/index.js.map
+22 silly found diff in packages/components/package.json
+23 verbose filtered diff [
+23 verbose filtered diff   'packages/components/dist/cjs/Button/index.js',
+23 verbose filtered diff   'packages/components/dist/cjs/Button/index.js.map',
+23 verbose filtered diff   'packages/components/dist/es/Button/index.js',
+23 verbose filtered diff   'packages/components/dist/es/Button/index.js.map',
+23 verbose filtered diff   'packages/components/package.json'
+23 verbose filtered diff ]
 24 silly checking diff packages/libs
 25 silly no diff found in @ql/libs
 26 verbose updated @ql/docs
 27 verbose updated @ql/components
-28 verbose git-describe undefined => "@ql/docs@1.0.1-2-g6e51754"
-29 silly git-describe parsed => {"lastTagName":"@ql/docs@1.0.1","lastVersion":"1.0.1","refCount":"2","sha":"6e51754","isDirty":false}
+28 verbose git-describe undefined => "@ql/docs@1.0.2-2-g3fbc5fa"
+29 silly git-describe parsed => {"lastTagName":"@ql/docs@1.0.2","lastVersion":"1.0.2","refCount":"2","sha":"3fbc5fa","isDirty":false}
 30 info execute Skipping releases
 31 silly lifecycle No script for "preversion" in "my-libs", continuing
 32 silly lifecycle No script for "preversion" in "@ql/components", continuing
@@ -41,29 +51,22 @@
 36 verbose version @ql/docs has no lockfile. Skipping lockfile update.
 37 silly lifecycle No script for "version" in "@ql/docs", continuing
 38 verbose version Updating root pnpm-lock.yaml
-39 silly lifecycle No script for "version" in "my-libs", continuing
-40 silly gitAdd [
-40 silly gitAdd   'packages/components/package.json',
-40 silly gitAdd   'apps/docs/package.json',
-40 silly gitAdd   'pnpm-lock.yaml'
-40 silly gitAdd ]
-41 silly gitCommit chore(release): publish
-41 silly gitCommit
-41 silly gitCommit  - @ql/docs@1.0.2
-41 silly gitCommit  - @ql/components@1.0.2
-42 verbose git [
-42 verbose git   'commit',
-42 verbose git   '-F',
-42 verbose git   '/private/var/folders/5c/nw2z7gm93xv0j7nhsztsdp0h0000gn/T/e74c22c3-3ed3-4aa5-bff0-cb743021b8f4/lerna-commit.txt'
-42 verbose git ]
-43 silly gitTag @ql/docs@1.0.2 git tag %s -m %s
-44 verbose git [ 'tag', '@ql/docs@1.0.2', '-m', '@ql/docs@1.0.2' ]
-45 silly gitTag @ql/components@1.0.2 git tag %s -m %s
-46 verbose git [ 'tag', '@ql/components@1.0.2', '-m', '@ql/components@1.0.2' ]
-47 error Error: Command failed with exit code 128: git tag @ql/components@1.0.2 -m @ql/components@1.0.2
-47 error fatal: tag '@ql/components@1.0.2' already exists
-47 error     at makeError (/Users/chen/Desktop/30/practice/my-libs/node_modules/.pnpm/execa@5.0.0/node_modules/execa/lib/error.js:59:11)
-47 error     at handlePromise (/Users/chen/Desktop/30/practice/my-libs/node_modules/.pnpm/execa@5.0.0/node_modules/execa/index.js:114:26)
-47 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-47 error     at async Promise.all (index 1)
-47 error     at async Promise.all (index 0)
+39 error Error: Command failed with exit code 1: pnpm install --lockfile-only --ignore-scripts
+39 error Scope: all 5 workspace projects
+39 error  WARN  `node_modules` is present. Lockfile only installation will make it out-of-date
+39 error Progress: resolved 1, reused 0, downloaded 0, added 0
+39 error packages/components                      |  WARN  deprecated tailwind@4.0.0
+39 error Progress: resolved 28, reused 0, downloaded 0, added 0
+39 error Progress: resolved 31, reused 0, downloaded 0, added 0
+39 error /Users/chen/Desktop/30/practice/my-libs/apps/docs:
+39 error  ERR_PNPM_NO_MATCHING_VERSION  No matching version found for @ql/components@^1.0.5
+39 error
+39 error This error happened while installing a direct dependency of /Users/chen/Desktop/30/practice/my-libs/apps/docs
+39 error
+39 error The latest release of @ql/components is "1.0.2".
+39 error
+39 error If you need the full list of all 3 published versions run "$ pnpm view @ql/components versions".
+39 error     at makeError (/Users/chen/Desktop/30/practice/my-libs/node_modules/.pnpm/execa@5.0.0/node_modules/execa/lib/error.js:59:11)
+39 error     at handlePromise (/Users/chen/Desktop/30/practice/my-libs/node_modules/.pnpm/execa@5.0.0/node_modules/execa/index.js:114:26)
+39 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+39 error     at async Promise.all (index 0)
